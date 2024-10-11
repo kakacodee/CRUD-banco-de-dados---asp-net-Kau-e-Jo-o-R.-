@@ -104,7 +104,7 @@ namespace Moriccolo.Repository
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd);
                 MySqlDataReader dr;
 
-                Usuario usuario = new Usuario();
+                Usuario usuario = new Usuario();    
                 dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
                 while (dr.Read())
                 {
